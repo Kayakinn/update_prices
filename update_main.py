@@ -68,7 +68,7 @@ updated_csv_path = 'updated_rush_ebay.csv'
 df.to_csv(updated_csv_path, index=False)
 
 # Commit and push the changes to the GitHub repository
-repo = Repo('/Users/ruwang/Desktop/working/update_prices')
+repo = Repo('Users\theou\OneDrive\桌面\cardprice\cardrushprice')
 repo.git.add(updated_csv_path)
 repo.index.commit('Update prices')
 origin = repo.remote(name='origin')
